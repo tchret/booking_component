@@ -60,7 +60,7 @@
       transform: translateY(0); }
     /* line 73, booking_board.scss */
     .booking-board-row:hover .day-item-user-avatar {
-      transform: translateY(10px);
+      transform: translateX(-10px);
       opacity: 0; }
     /* line 78, booking_board.scss */
     .booking-board-row:hover .day-item-user-name {
@@ -69,7 +69,7 @@
     /* line 83, booking_board.scss */
     .booking-board-row:hover .booking-board-row-user {
       opacity: 1;
-      transform: translateY(0); }
+      transform: translateX(0); }
     /* line 89, booking_board.scss */
     .booking-board-row:last-child {
       margin-bottom: 0; }
@@ -150,7 +150,7 @@
   height: 38px;
   width: 38px;
   opacity: 0;
-  transform: translateY(-10%);
+  transform: translateX(10px);
   transition: transform .15s ease, opacity .15s ease;
   transition-delay: .3s;
   border-radius: 50%;
