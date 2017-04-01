@@ -1,0 +1,16 @@
+- daySlug = "#{day.month.downcase}#{day.number}"
+- isActive = user.days.include? daySlug
+.day-item class="#{'is-active' if isActive } #{'is-last' if user.days.last == daySlug}  #{'is-first' if user.days.first == daySlug}" style="#{"color: #{user.color}" if isActive}"
+  .day-item-color-container
+    .day-item-color style="background: #{user.color if isActive}"
+  .day-item-name
+    = day.name
+  .day-item-number
+    = day.number
+  - if defined? user
+    - if isActive && user.days[0] == daySlug
+      .day-item-user
+        .day-item-user-avatar
+
+        .day-item-user-name
+

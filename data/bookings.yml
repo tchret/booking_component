@@ -1,0 +1,106 @@
+price:
+  per_night: '30'
+  per_week: '300'
+users:
+  - days:
+    - 'may28'
+    - 'may29'
+    - 'may30'
+    - 'may31'
+    - 'june1'
+    - 'june2'
+    - 'june3'
+    - 'june4'
+    color: '#e67e22'
+
+  - days:
+
+    - 'may31'
+    - 'june1'
+    - 'june2'
+    - 'june3'
+    - 'june4'
+    color: '#3498db'
+
+  - days:
+    - 'may28'
+    - 'may29'
+    - 'may30'
+    - 'may31'
+    - 'june1'
+    - 'june2'
+    - 'june3'
+    - 'june4'
+    color: "#2ecc71"
+
+  - days:
+    - 'may28'
+    - 'may29'
+    - 'may30'
+    - 'may31'
+    - 'june1'
+    - 'june2'
+    - 'june3'
+    - 'june4'
+    color: "#e74c3c"
+
+  - days:
+    - 'may28'
+    - 'may29'
+    - 'may30'
+    - 'may31'
+    - 'june1'
+    - 'june2'
+    - 'june3'
+    - 'june4'
+    - 'june5'
+    - 'june6'
+
+
+    color: "#1abc9c"
+
+
+weeks:
+  - days:
+    - name: 'Sun'
+      number: 28
+      month: 'May'
+    - name: 'Mon'
+      number: 29
+      month: 'May'
+    - name: 'Tue'
+      number: 30
+      month: 'May'
+    - name: 'Wed'
+      number: 31
+      month: 'May'
+    - name: 'Thu'
+      number: 1
+      month: 'June'
+    - name: 'Fri'
+      number: 2
+      month: 'June'
+    - name: 'Sat'
+      number: 3
+      month: 'June'
+    - name: 'Sun'
+      number: 4
+      month: 'June'
+  - days:
+    - name: 'Mon'
+      number: 5
+      month: 'June'
+    - name: 'Tue'
+      number: 6
+      month: 'June'
+    - name: 'Wed'
+      number: 7
+      month: 'June'
+    - name: 'Thu'
+      number: 8
+      month: 'June'
+    - name: 'Fri'
+      number: 9
+      month: 'June'
+
+
