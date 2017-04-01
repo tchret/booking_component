@@ -55,6 +55,8 @@
     cursor: default;
 
     &:hover {
+      .day-item-color { opacity: .25};
+
       .day-item {
         .day-item-number{
           opacity: 1;
@@ -69,14 +71,18 @@
       }
 
       .day-item-user-avatar {
-        transform: translateX(-110%) scale(1.5);
-        opacity: 1;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        transform: translateY(10px);
+        opacity: 0;
       }
 
       .day-item-user-name {
         opacity: 0;
         transform: translateY(10px);
+      }
+
+      .booking-board-row-user {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
@@ -101,7 +107,7 @@
       }
 
       &-user-avatar {
-        transition: transform .15s ease, box-shadow .15s ease;
+        transition: transform .15s ease, opacity .15s ease;
         transition-delay: .2s;
       }
 
@@ -168,6 +174,20 @@
       opacity: .5;
     }
   }
+}
+
+.booking-board-row-user {
+  height: 38px;
+  width: 38px;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: transform .15s ease, opacity .15s ease;
+  transition-delay: .3s;
+  border-radius: 50%;
+  background-size: cover !important;
+  position: absolute;
+  left: -70px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 

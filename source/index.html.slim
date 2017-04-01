@@ -17,6 +17,8 @@ page_title: Booking board
       .booking-board-rows
         - data.bookings.users.each do |user|
           .booking-board-row
+            .booking-board-row-user
+
             - weeks.each do |week|
               - week.days.each_with_index do |day, i|
                 = partial 'partials/day_item', locals: {day: day, user: user, week: week, i: i }
@@ -37,6 +39,7 @@ javascript:
       for (var i = 0, len = data.length; i < len; i++) {
         console.log(data[i])
         $('.day-item-user-avatar').eq(i).css({background: "url('" + data[i].avatars[0].url + "')"})
+        $('.booking-board-row-user').eq(i).css({background: "url('" + data[i].avatars[0].url + "')"})
         $('.day-item-user-name').eq(i).html(data[i].first_name + " " + data[i].last_name)
       }
     }
