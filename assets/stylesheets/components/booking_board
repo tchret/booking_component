@@ -1,0 +1,153 @@
+/* line 1, booking_board.scss */
+.booking-board {
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  position: relative;
+  padding: 15px; }
+  /* line 8, booking_board.scss */
+  .booking-board:after {
+    content: '';
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    top: 0;
+    height: 100%;
+    width: 1px;
+    z-index: 0; }
+  /* line 22, booking_board.scss */
+  .booking-board-wrapper {
+    padding: 50px 0; }
+  /* line 26, booking_board.scss */
+  .booking-board-headers {
+    display: flex; }
+  /* line 30, booking_board.scss */
+  .booking-board-header {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    padding-bottom: 30px; }
+    /* line 36, booking_board.scss */
+    .booking-board-header-title {
+      font-size: 23px;
+      font-weight: 400; }
+    /* line 41, booking_board.scss */
+    .booking-board-header-subtitle {
+      padding-top: 7px;
+      opacity: .5; }
+  /* line 47, booking_board.scss */
+  .booking-board-rows {
+    position: relative;
+    z-index: 1; }
+  /* line 52, booking_board.scss */
+  .booking-board-row {
+    display: flex;
+    margin-bottom: 15px;
+    cursor: default; }
+    /* line 59, booking_board.scss */
+    .booking-board-row:hover .day-item .day-item-number {
+      opacity: 1;
+      transform: translateY(0); }
+    /* line 65, booking_board.scss */
+    .booking-board-row:hover .day-item .day-item-name {
+      opacity: .5;
+      transform: translateY(0); }
+    /* line 71, booking_board.scss */
+    .booking-board-row:hover .day-item-user-avatar {
+      transform: translateX(-110%) scale(1.5);
+      opacity: 1;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    /* line 77, booking_board.scss */
+    .booking-board-row:hover .day-item-user-name {
+      opacity: 0;
+      transform: translateY(10px); }
+    /* line 83, booking_board.scss */
+    .booking-board-row:last-child {
+      margin-bottom: 0; }
+    /* line 87, booking_board.scss */
+    .booking-board-row .day-item {
+      flex: 1;
+      visibility: none;
+      opacity: .5; }
+      /* line 92, booking_board.scss */
+      .booking-board-row .day-item .day-item-number, .booking-board-row .day-item .day-item-name {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity .15s ease, transform .15s ease;
+        transition-delay: .2s; }
+      /* line 99, booking_board.scss */
+      .booking-board-row .day-item.is-active {
+        opacity: 1; }
+      /* line 103, booking_board.scss */
+      .booking-board-row .day-item-user-avatar {
+        transition: transform .15s ease, box-shadow .15s ease;
+        transition-delay: .2s; }
+      /* line 108, booking_board.scss */
+      .booking-board-row .day-item-user {
+        position: absolute !important;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        padding-left: 5px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        z-index: 3; }
+        /* line 120, booking_board.scss */
+        .booking-board-row .day-item-user-avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          opacity: .8;
+          background-size: cover !important; }
+        /* line 128, booking_board.scss */
+        .booking-board-row .day-item-user-name {
+          margin-left: 7px;
+          opacity: 1;
+          transition: transform .15s ease, opacity .15s ease;
+          transition-delay: .2s; }
+
+/* line 141, booking_board.scss */
+.booking-board-btns {
+  margin: 0 -15px;
+  display: flex; }
+  /* line 144, booking_board.scss */
+  .booking-board-btns .booking-board-btn {
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin: 15px 15px 0 15px;
+    box-shadow: rgba(23, 43, 99, 0.26) 0 7px 42px;
+    background-color: #3e70ff;
+    background: linear-gradient(#2083fe, #1d7bf0);
+    border-radius: 3px;
+    padding: 15px 0;
+    color: white; }
+    /* line 157, booking_board.scss */
+    .booking-board-btns .booking-board-btn:hover i {
+      transform: translateX(5px);
+      opacity: .8; }
+    /* line 163, booking_board.scss */
+    .booking-board-btns .booking-board-btn i {
+      font-size: 20px;
+      position: absolute;
+      margin-left: 7px;
+      transition: .15s ease transform;
+      opacity: .5; }
+
+@media (max-width: 700px) {
+  /* line 175, booking_board.scss */
+  .booking-board-wrapper {
+    overflow: scroll; }
+    /* line 177, booking_board.scss */
+    .booking-board-wrapper::-webkit-scrollbar {
+      display: none; }
+
+  /* line 182, booking_board.scss */
+  .booking-board {
+    width: 700px;
+    margin: 0 15px; } }
