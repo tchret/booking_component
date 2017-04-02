@@ -172,19 +172,25 @@ i.booking-board-row-lock {
     padding-bottom: 7px;
     font-weight: 500;
     opacity: 0; }
-  /* line 216, booking_board.scss */
+    /* line 213, booking_board.scss */
+    .booking-board-footer-title i {
+      font-style: normal;
+      margin-left: 4px;
+      opacity: .6;
+      font-weight: 400; }
+  /* line 223, booking_board.scss */
   .booking-board-footer.step-2 .booking-board-footer-title {
     opacity: 1; }
-  /* line 219, booking_board.scss */
+  /* line 226, booking_board.scss */
   .booking-board-footer.step-2 .booking-board-btn:not(.is-active) {
     display: none; }
-  /* line 223, booking_board.scss */
+  /* line 230, booking_board.scss */
   .booking-board-footer.step-2 .day-item:not(.is-active) {
     opacity: 1;
     transform: translateY(0);
     transition: opacity .3s ease;
     transition-delay: .3s; }
-  /* line 230, booking_board.scss */
+  /* line 237, booking_board.scss */
   .booking-board-footer.step-2 .booking-board-btn.is-active {
     animation: enter .15s ease forwards;
     animation-delay: .2s;
@@ -195,30 +201,30 @@ i.booking-board-row-lock {
   to {
     transform: translateY(0);
     opacity: 1; } }
-/* line 246, booking_board.scss */
+/* line 253, booking_board.scss */
 .booking-board-days-selector {
   display: flex; }
-  /* line 251, booking_board.scss */
+  /* line 258, booking_board.scss */
   .booking-board-days-selector:hover .day-item.is-active .day-item-name {
     opacity: .5; }
-  /* line 257, booking_board.scss */
+  /* line 264, booking_board.scss */
   .booking-board-days-selector .day-item {
     flex: 1;
     cursor: pointer;
     opacity: 0;
     transform: translateY(10px);
     transition: .15s ease transform, .15s ease opacity; }
-    /* line 264, booking_board.scss */
+    /* line 271, booking_board.scss */
     .booking-board-days-selector .day-item.is-visible {
       opacity: 1;
       transform: translateY(0); }
-    /* line 269, booking_board.scss */
+    /* line 276, booking_board.scss */
     .booking-board-days-selector .day-item .day-item-name {
       opacity: .5; }
-    /* line 274, booking_board.scss */
+    /* line 281, booking_board.scss */
     .booking-board-days-selector .day-item:hover .day-item-name {
       opacity: 1; }
-    /* line 279, booking_board.scss */
+    /* line 286, booking_board.scss */
     .booking-board-days-selector .day-item:before {
       opacity: 0;
       content: '';
@@ -233,27 +239,27 @@ i.booking-board-row-lock {
       margin: auto;
       transition: .15s ease opacity;
       background: #1E7EF5; }
-    /* line 295, booking_board.scss */
+    /* line 302, booking_board.scss */
     .booking-board-days-selector .day-item.is-active .day-item-name {
       opacity: 1 !important; }
-    /* line 298, booking_board.scss */
+    /* line 305, booking_board.scss */
     .booking-board-days-selector .day-item.is-active .day-item-number {
       position: relative;
       z-index: 1;
       color: white; }
-    /* line 304, booking_board.scss */
+    /* line 311, booking_board.scss */
     .booking-board-days-selector .day-item.is-active:before {
       opacity: 1; }
 
 @media (max-width: 700px) {
-  /* line 313, booking_board.scss */
+  /* line 320, booking_board.scss */
   .booking-board-wrapper {
     overflow: scroll; }
-    /* line 315, booking_board.scss */
+    /* line 322, booking_board.scss */
     .booking-board-wrapper::-webkit-scrollbar {
       display: none; }
 
-  /* line 320, booking_board.scss */
+  /* line 327, booking_board.scss */
   .booking-board {
     width: 700px;
     margin: 0 15px; } }
