@@ -2,15 +2,15 @@
 .day-item {
   text-align: center;
   position: relative; }
-  /* line 6, day_item.scss */
+  /* line 5, day_item.scss */
   .day-item div {
     position: relative;
     z-index: 1; }
-  /* line 11, day_item.scss */
+  /* line 10, day_item.scss */
   .day-item-number {
     font-size: 18px;
     font-weight: 100; }
-  /* line 16, day_item.scss */
+  /* line 15, day_item.scss */
   .day-item .day-item-color {
     position: absolute;
     top: 0;
@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     opacity: .2; }
-    /* line 24, day_item.scss */
+    /* line 23, day_item.scss */
     .day-item .day-item-color-container {
       position: absolute;
       top: 0;
@@ -27,9 +27,9 @@
       z-index: 0;
       right: 0;
       background: white; }
-  /* line 37, day_item.scss */
+  /* line 36, day_item.scss */
   .day-item.is-first .day-item-color {
     border-radius: 20em 0 0 20em; }
-  /* line 43, day_item.scss */
+  /* line 42, day_item.scss */
   .day-item.is-last .day-item-color {
     border-radius: 0 20em 20em 0; }
